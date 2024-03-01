@@ -80,6 +80,11 @@ else
 $st = pow(2, 10);       // = 2 ** 10
 echo $st; echo "\n";
 $s = sqrt(245);
-echo $s;
+echo $s; echo "\n";
+
+$arr = [4, 2, 5, 19, 13, 0, 10];
+
+
+
 
 
