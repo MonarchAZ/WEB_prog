@@ -106,7 +106,13 @@ $result = [
     'floor' => $floor,
     'ceil' => $ceil           // сохраняем значения в массив с ключами floor и ceil
 ];
-print_r ($result);
+print_r ($result);   echo "\n";
+
+$arr2 = [4, -2, 5, 19, -130, 0, 10];
+$min = min($arr2);
+$max = max($arr2);
+echo $min; echo "\n"; echo $max;
+
 
 
 
