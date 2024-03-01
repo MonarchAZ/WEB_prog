@@ -192,7 +192,12 @@ function increaseEnthusiasm($str)
     return $str . "!";
 }
 echo increaseEnthusiasm("Да сколько можно?");
-
+echo "\n";
+function repeatThreeTimes($str)
+{                                       // повторяем исходную строку три раза
+    return $str . $str . $str;
+}
+echo repeatThreeTimes("Мяу");
 
 
 
