@@ -83,6 +83,13 @@ $s = sqrt(245);
 echo $s; echo "\n";
 
 $arr = [4, 2, 5, 19, 13, 0, 10];
+$sumSq = 0;
+foreach ($arr as $arr)
+{
+    $sumSq += $arr ** 2;
+}
+$squareRoot = sqrt($sumSq);          
+echo "The square root of the sum of squares of the elements = $squareRoot";
 
 
 
