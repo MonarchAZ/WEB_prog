@@ -129,7 +129,23 @@ echo "Work the module."; echo "\n";
 $a = 20;
 $b = 50;                        // Модуль разности
 $module = abs($a - $b);
-echo $module;
+echo $module; echo "\n";
+
+$arr3 = [1, 2, -1, -2, 3, -3];
+$newArr3 = [];
+foreach ($arr3 as $arr3)   // Проходимся по массиву arr3
+{
+    if ($arr3 < 0) // Если число отрицательное
+    {
+        $newArr3[] = abs($arr3); // Преобразуем отрицательное число в положительное
+    } else
+    {
+        $newArr3[] = $arr3; // Оставляем положительное без изменений
+    }
+}
+print_r($newArr3);
+
+
 
 
 
