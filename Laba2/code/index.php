@@ -111,7 +111,17 @@ print_r ($result);   echo "\n";
 $arr2 = [4, -2, 5, 19, -130, 0, 10];
 $min = min($arr2);
 $max = max($arr2);
-echo $min; echo "\n"; echo $max;
+echo $min; echo "\n"; echo $max; echo "\n";
+
+$randomNum = rand(1, 100);
+echo $randomNum;  echo "\n";      // Генерируем случайно число от 1 до 100
+
+$randomNum2 = array();            // Создаём пустой массив
+for ($i = 0; $i < 10; $i++)       // 10 чисел
+{
+    $randomNum2[] = rand(1, 100);  // случайных от 1 до 10000
+}
+print_r ($randomNum2);
 
 
 
