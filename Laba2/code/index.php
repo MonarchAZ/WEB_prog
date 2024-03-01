@@ -88,8 +88,30 @@ foreach ($arr as $arr)
 {
     $sumSq += $arr ** 2;
 }
-$squareRoot = sqrt($sumSq);          
+$squareRoot = sqrt($sumSq);
 echo "The square root of the sum of squares of the elements = $squareRoot";
+
+echo "<br>";
+
+echo "Continuation of the 14th task.";
+echo round(sqrt(379)); echo "\n";                  // целое
+echo round(sqrt(379), 1); echo "\n";      // до десятых
+echo round(sqrt(379), 2); echo "\n";      // до сотых
+
+$nb = 587;
+$floor = floor(sqrt($nb));    // округление вниз до ближайшего значения
+$ceil = ceil(sqrt($nb));      // вверх
+
+$result = [
+    'floor' => $floor,
+    'ceil' => $ceil           // сохраняем значения в массив с ключами floor и ceil
+];
+print_r ($result);
+
+
+
+
+
 
 
 
