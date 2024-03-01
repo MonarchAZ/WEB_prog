@@ -263,7 +263,21 @@ foreach ($arr7 as $row)        // Обходим каждый элемент
         $sum += $value;        // добавляем его значение к sum
     }
 }
-echo 'Сумма элементов массива: ' . $sum;
+echo 'Сумма элементов массива: ' . $sum;   echo "<br>";
+
+// Создание массива  с помощью двух циклов
+$newTwoDimArray = [];
+$value = 1;
+for ($i = 0; $i < 3; $i++)
+{
+    $innerArray = [];
+    for ($j = 0; $j < 3; $j++)
+    {
+        $innerArray[] = $value++;
+    }
+    $newTwoDimArray[] = $innerArray;
+}
+print_r($newTwoDimArray);
 
 
 
