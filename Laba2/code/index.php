@@ -36,3 +36,8 @@ $months = 11;
 $days = $months * 16;   // really learn 16 day!!!
 $days_per_language = $days / $num_languages;
 echo "$days_per_language days were spent learning each language!";
+
+echo "<br>";
+
+// Task 12.
+echo 8 ** 2;       // 64
