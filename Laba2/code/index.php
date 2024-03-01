@@ -33,4 +33,6 @@ echo "<br>";
 // Task 11.
 $num_languages = 4;     // Ruby, Python, JavaScript, C++
 $months = 11;
-
+$days = $months * 16;   // really learn 16 day!!!
+$days_per_language = $days / $num_languages;
+echo "$days_per_language days were spent learning each language!";
