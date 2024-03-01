@@ -200,6 +200,12 @@ function repeatThreeTimes($str)
 echo repeatThreeTimes("Мяу");
 echo "\n";
 echo increaseEnthusiasm(repeatThreeTimes("Идём до конца"));   // 14.3
+echo "\n";
+
+function cut($str22, $length = 10)                   // обрезание строки через функцию
+{
+    return substr($str22, 0, $length);    // выделяем подстроку из переданной строки и возвращаем её же
+}
 
 
 
