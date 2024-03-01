@@ -235,6 +235,20 @@ function F2($num)               // Сумма цифр в числе (до од�
 }
 echo F2($num2345);
 
+echo "<br>";
+
+// Task 17
+function arrayFill($value, $count)                    // Заполнение массива нужными значениями
+{
+    $result = [];
+    for ($i = 0; $i < $count; $i++)
+    {
+        $result[] = str_repeat($value, $i + 1);
+    }
+    return $result;
+}
+$arr6 = arrayFill('x', 7);
+print_r($arr6);   echo "\n";
 
 
 
