@@ -60,5 +60,20 @@ echo "<br>";
 $a = 10;
 $b = 3;
 echo $a % $b;        // Remainder of the division
+echo "\n";
+echo "Check!. Is the number $a divisible by the number $b without remainder?";
+echo "\n";
+if ($a % $b == 0)
+{
+    echo "Yes. Without remainder.";
+    echo "\n";
+    echo $a / $b;         // value
+}
+else
+{
+    echo "No. It's divided with the remainder";
+    echo "\n";
+    echo $a % $b;         // remainder
+}
 
 
