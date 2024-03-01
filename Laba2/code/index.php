@@ -123,6 +123,15 @@ for ($i = 0; $i < 10; $i++)       // 10 чисел
 }
 print_r ($randomNum2);
 
+echo "<br>";
+
+echo "Work the module."; echo "\n";
+$a = 20;
+$b = 50;                        // Модуль разности
+$module = abs($a - $b);
+echo $module;
+
+
 
 
 
