@@ -173,6 +173,16 @@ foreach ($arr4 as $element)      // проходимся по элементам
 }
 echo "Сумма первых $count элементов массива будет > 10!";
 
+echo "<br>";
+
+// Task 15.
+function printStringReturnNumber($string)
+{
+    echo $string;
+    return 738;
+}
+$my_num = printStringReturnNumber("Ну сколько ещё там заданий??"); // Вызов функции и сохраняем возвращаемое значение
+echo $my_num; // Вывод переменной my_num
 
 
 
