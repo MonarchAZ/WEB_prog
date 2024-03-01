@@ -74,6 +74,12 @@ else
     echo "No. It's divided with the remainder";
     echo "\n";
     echo $a % $b;         // remainder
+    echo "\n";
 }
+
+$st = pow(2, 10);       // = 2 ** 10
+echo $st; echo "\n";
+$s = sqrt(245);
+echo $s;
 
 
