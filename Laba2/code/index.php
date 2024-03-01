@@ -184,6 +184,16 @@ function printStringReturnNumber($string)
 $my_num = printStringReturnNumber("Ну сколько ещё там заданий??"); // Вызов функции и сохраняем возвращаемое значение
 echo $my_num; // Вывод переменной my_num
 
+echo "<br>";
+
+// Task 16.
+function increaseEnthusiasm($str)
+{                                       // добавляем восклицательный знак в конец строки
+    return $str . "!";
+}
+
+
+
 
 
 
