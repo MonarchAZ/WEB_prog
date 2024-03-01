@@ -27,3 +27,10 @@ $last_month = 1187.23;
 $this_month = 1089.98;
 $differenceBetweenExpenses = $last_month - $this_month;
 echo "\n$differenceBetweenExpenses";
+
+echo "<br>";
+
+// Task 11.
+$num_languages = 4;     // Ruby, Python, JavaScript, C++
+$months = 11;
+
