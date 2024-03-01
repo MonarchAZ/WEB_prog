@@ -52,5 +52,13 @@ $answer *=2;
 $answer -=2;
 $answer /=2;
 $answer -= $my_num;
-echo $answer;             // It's real 1. 
+echo $answer;             // It's real 1.
+
+echo "<br>";
+
+// Task 14.
+$a = 10;
+$b = 3;
+echo $a % $b;        // Remainder of the division
+
 
