@@ -198,6 +198,8 @@ function repeatThreeTimes($str)
     return $str . $str . $str;
 }
 echo repeatThreeTimes("Мяу");
+echo "\n";
+echo increaseEnthusiasm(repeatThreeTimes("Идём до конца"));   // 14.3
 
 
 
