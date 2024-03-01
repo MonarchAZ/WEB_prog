@@ -51,4 +51,6 @@ $answer +=2;
 $answer *=2;
 $answer -=2;
 $answer /=2;
+$answer -= $my_num;
+echo $answer;             // It's real 1. 
 
