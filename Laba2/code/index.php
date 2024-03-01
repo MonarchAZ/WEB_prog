@@ -250,6 +250,20 @@ function arrayFill($value, $count)                    // Заполнение м
 $arr6 = arrayFill('x', 7);
 print_r($arr6);   echo "\n";
 
+$arr7 = array(
+    array(1,2,3),
+    array(4,5),
+    array(6,7)
+);
+$sum = 0;      // сумма элементов
+foreach ($arr7 as $row)        // Обходим каждый элемент
+{
+    foreach ($row as $value)
+    {
+        $sum += $value;        // добавляем его значение к sum
+    }
+}
+echo 'Сумма элементов массива: ' . $sum;
 
 
 
