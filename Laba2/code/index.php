@@ -191,7 +191,7 @@ function increaseEnthusiasm($str)
 {                                       // добавляем восклицательный знак в конец строки
     return $str . "!";
 }
-
+echo increaseEnthusiasm("Да сколько можно?");
 
 
 
