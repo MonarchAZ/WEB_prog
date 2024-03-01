@@ -14,4 +14,6 @@ echo "<br>";   // separate tasks (new line)
 // Task 2.
 $variableOne = 777;
 echo $variableOne;
-
+echo "\n";            // task 2.2
+$variableTwoFloat = 3.14;
+echo $variableTwoFloat;
