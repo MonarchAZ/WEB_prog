@@ -302,6 +302,8 @@ echo prev($arr9) . "\n";            // предпоследний
 echo "<br>";
 
 // Task 18.
+$num1 = 13214;
+$num2 = 142;
 function F3($num1, $num2)    // принимаем на вход два числа
 {
     $sum = $num1 + $num2;
@@ -313,7 +315,17 @@ function F3($num1, $num2)    // принимаем на вход два числ
         return false;        // если нет - false
     }
 }
-
+function F4($num1, $num2)  // Аналогичная функция
+{
+    if ($num1 === $num2)   // проверка на равенство
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 
 
 
