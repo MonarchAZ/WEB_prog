@@ -371,6 +371,10 @@ $arr11 = [2, 1, 60, 4, 14, 450];
 $arithmeticMean = array_sum($arr11) / count($arr11);
 echo $arithmeticMean; echo "\n";
 
+$sum1_100 = array_sum(range(1, 100));      // 18.2
+echo $sum1_100; echo "\n";
+
+
 
 
 
