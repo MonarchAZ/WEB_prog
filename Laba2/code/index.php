@@ -366,6 +366,11 @@ for ($i = 1; $i <= 20; $i++) {
 
 echo "<br>";
 
+// Task 20.
+$arr11 = [2, 1, 60, 4, 14, 450];
+$arithmeticMean = array_sum($arr11) / count($arr11);
+echo $arithmeticMean; echo "\n";
+
 
 
 
