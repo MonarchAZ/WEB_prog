@@ -299,6 +299,21 @@ echo count($arr9); echo "\n";              // кол-во элементов
 echo end($arr9) . "\n";             // последний элемент
 echo prev($arr9) . "\n";            // предпоследний
 
+echo "<br>";
+
+// Task 18.
+function F3($num1, $num2)    // принимаем на вход два числа
+{
+    $sum = $num1 + $num2;
+    if ($sum > 10)           // если сумма > 10 возвращаем true
+    {
+        return true;
+    } else
+    {
+        return false;        // если нет - false
+    }
+}
+
 
 
 
