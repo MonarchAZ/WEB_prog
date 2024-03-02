@@ -294,6 +294,10 @@ $date = ['year' => date('Y'),
     'day' => date('d')];
 echo $date['year'] . '-' . $date['month'] . '-' . $date['day']; echo "<br>";
 
+$arr9 = ['a', 'b', 'c', 'd', 'e'];
+echo count($arr9); echo "\n";              // кол-во элементов
+echo end($arr9) . "\n";             // последний элемент
+echo prev($arr9) . "\n";            // предпоследний
 
 
 
