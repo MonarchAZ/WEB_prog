@@ -281,7 +281,13 @@ print_r($newTwoDimArray);        echo "\n";
 
 $arr8 = [2, 5, 3, 9];
 $result = ($arr8[0] * $arr8[1]) + ($arr8[2] * $arr8[3]);
-echo "Результат: $result\n";
+echo "Результат: $result\n";  echo "<br>";
+
+$user = ['name' => 'Артур',
+    'surname' => 'Зуев',
+    'patronymic' => 'Вадимович'];
+// Вывод ФИО через пробел
+echo $user['surname'] . ' ' . $user['name'] . ' ' . $user['patronymic'];
 
 
 
