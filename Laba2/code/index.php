@@ -386,4 +386,9 @@ $alphNumbers = array_combine($alph, $numbers);  // Сопоставляем бу
 print_r($alphNumbers);
 
 
+$stringLast = '1234567890';    // 12 + 34 + 56 + ...
+$sumLast = array_sum(str_split($stringLast, 2));  // Ищем сумму цифр числа но попарно (length = 2)
+echo  $sumLast;
+
+
 
