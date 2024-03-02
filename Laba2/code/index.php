@@ -380,3 +380,10 @@ $squareRoots = array_map('sqrt', $arr12);     //Массив с корнями
 print_r($squareRoots);
 echo "<br>";
 
+$alph = range('a', 'z');
+$numbers = range(1, 26);
+$alphNumbers = array_combine($alph, $numbers);  // Сопоставляем буквам числа (20.4)
+print_r($alphNumbers);
+
+
+
