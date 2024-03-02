@@ -349,6 +349,13 @@ else
         echo 'Сумма цифр двузначна';
     }
 }
+echo "\n";
+$arr10 = [1,5,2];
+if (count($arr10) === 3)
+{
+    $sum = array_sum($arr10);
+    echo 'Сумма: ' . $sum;
+}
 
 
 
