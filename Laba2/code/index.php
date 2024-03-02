@@ -371,12 +371,12 @@ $arr11 = [2, 1, 60, 4, 14, 450];
 $arithmeticMean = array_sum($arr11) / count($arr11);
 echo $arithmeticMean; echo "\n";
 
-$sum1_100 = array_sum(range(1, 100));      // 18.2
+$sum1_100 = array_sum(range(1, 100));      // 20.2
 echo $sum1_100; echo "\n";
 
 
-
-
-
-
+$arr12 = [2, 4, 53, 125];                              // 20.3
+$squareRoots = array_map('sqrt', $arr12);     //Массив с корнями
+print_r($squareRoots);
+echo "<br>";
 
