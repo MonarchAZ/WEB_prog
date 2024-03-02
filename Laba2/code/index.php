@@ -277,7 +277,12 @@ for ($i = 0; $i < 3; $i++)
     }
     $newTwoDimArray[] = $innerArray;
 }
-print_r($newTwoDimArray);
+print_r($newTwoDimArray);        echo "\n";
+
+$arr8 = [2, 5, 3, 9];
+$result = ($arr8[0] * $arr8[1]) + ($arr8[2] * $arr8[3]);
+echo "Результат: $result\n";
+
 
 
 
