@@ -287,7 +287,12 @@ $user = ['name' => 'Артур',
     'surname' => 'Зуев',
     'patronymic' => 'Вадимович'];
 // Вывод ФИО через пробел
-echo $user['surname'] . ' ' . $user['name'] . ' ' . $user['patronymic'];
+echo $user['surname'] . ' ' . $user['name'] . ' ' . $user['patronymic'];  echo "<br>";
+
+$date = ['year' => date('Y'),
+    'month' => date('m'),
+    'day' => date('d')];
+echo $date['year'] . '-' . $date['month'] . '-' . $date['day']; echo "<br>";
 
 
 
