@@ -1,5 +1,13 @@
 <?php
 session_start();
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $data = [
+        'name' => $_POST['name'],
+        'age' => $_POST['age'],
+        'salary' => $_POST['salary'],
+        'extra' => $_POST['extra']];
+    $_SESSION['userdata'] = $data;
+}
 ?>
 
 <!doctype html>
