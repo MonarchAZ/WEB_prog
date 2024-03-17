@@ -13,6 +13,7 @@ $filePath = "categories/{$category}/{$title}.txt";
 if (false === file_put_contents($filePath, $desc)) {
     throw new Exception('Something went wrong.');
 }
+chmod($filePath, 0777);
 header('Location: indexTask3.php');
 exit();
 
