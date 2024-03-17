@@ -7,6 +7,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         'salary' => $_POST['salary'],
         'extra' => $_POST['extra']];
     $_SESSION['userdata'] = $data;
+
+    header("Location: indexOutputTask2C.php");
+    exit();
 }
 ?>
 
