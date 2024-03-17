@@ -7,7 +7,7 @@
 </form>
 
 <?php
-if (isset($_POST['submit'])) {
+if (true === isset($_POST['submit'])) {
     $text = $_POST['text'];
 
     $countWords = str_word_count($text);                                 // кол-во слов
