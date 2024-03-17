@@ -7,7 +7,13 @@ session_start();
 <body>
 <ul>
     <?php
-    
+    if (true === isset($_SESSION['userdata'])) {
+        $data = $_SESSION['userdata'];
+        foreach ($data as $key => $value)
+        {
+            echo "<li> $key: $value <li>";
+        }
+    }
     ?>
 </ul>
 </body>
