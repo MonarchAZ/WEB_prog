@@ -8,24 +8,25 @@
     <title>Название!</title>
 </head>
 <body>
-    <form action="save.php" method="post">
-        <label for="email">Email</label>
-        <input type="email" name="email" required>
+    <div>
+        <form action="save.php" method="post">
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
 
-        <label for="category">Category</label>
-        <select name="category" required>
-            <option value="cars">Cars</option>
-            <option value="other">Other</option>
-        </select>
+            <label for="category">Category</label>
+            <select name="category" required>
+                <option value="cars">Cars</option>
+                <option value="other">Other</option>
+            </select>
 
-        <label for="title">Title</label>
-        <input type="text" name="title" required>
+            <label for="title">Title</label>
+            <input type="text" name="title" required>
 
-        <label for="description">Description</label>
-        <textarea rows="3" name="description"></textarea>
+            <label for="description">Description</label>
+            <textarea rows="3" name="description"></textarea>
 
-        <input type="submit" value="Save">
-
-    </form>
+            <input type="submit" value="Save">
+        </form>
+    </div>
 </body>
 </html>
