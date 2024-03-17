@@ -38,6 +38,9 @@
             </thead>
             <tbody>
             <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $email = $_POST["email"];
+            }
             $entries = glob('categories/*/*.txt');    // поиск файла из шаблонов .txt в папке categories
             foreach ($entries as $entry) {                   // перебираем каждый элемент массива
                 $parts = explode('/', $entry);      // разделяем строку пути файла на части через /
@@ -45,7 +48,7 @@
                 $title = basename($parts[2], '.txt');  // имя файла без .txt расширения
                 $description = file_get_contents($entry);    // чтение из файла
                 echo "<tr>";
-                echo "<td>test@mail.ru</td>";
+                echo "<td></td>";
                 echo "<td>{$category}</td>";        // вывод данных в нужные места таблички
                 echo "<td>{$title}</td>";
                 echo "<td>{$description}</td>";
