@@ -7,12 +7,14 @@
 </form>
 
 <?php
-if (isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
     $text = $_POST['text'];
 
     $countWords = str_word_count($text);                                 // кол-во слов
     $countSymbols = strlen(str_replace(' ', '', $text));   // символов (без пробела)
-    
+    echo "Количество слов:\n $countWords"; echo '<br / >';
+    echo "Количество символов (без учёта пробелов):\n $countSymbols";
+}
 ?>
 
 </body>
