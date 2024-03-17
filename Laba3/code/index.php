@@ -8,3 +8,14 @@ print_r($matches[0]);
 echo '<br />';
 
 
+// Task 1b
+$strOnePointB = 'a1b2c3';
+// preg_replace_callback - заменяем совпадения с регуляркой в строке
+$result = preg_replace_callback('/\d/', function($matchesPointB) {
+    $number = intval($matchesPointB[0]);   // Преобразуем совпадение в число
+    $cubed = $number ** 3;                 // Возводим в куб
+    return $cubed;                         // Возвращаем результат
+},
+    $strOnePointB);
+echo "Task 1b:\n $result";
+echo '<br />';
