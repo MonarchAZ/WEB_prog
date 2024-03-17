@@ -31,16 +31,27 @@
     <div id="table">
         <table>
             <thead>
+            <th>Email</th>
             <th>Category</th>
             <th>Title</th>
             <th>Description</th>
             </thead>
             <tbody>
-            <tr>
-                    <td>cars</td>
-                    <td>test</td>
-                    <td>blablabla blaa</td>
-                </tr>
+            <?php
+            $entries = glob('categories/*/*.txt');    // поиск файла из шаблонов .txt в папке categories
+            foreach ($entries as $entry) {                   // перебираем каждый элемент массива
+                $parts = explode('/', $entry);      // разделяем строку пути файла на части через /
+                $category = $parts[1];
+                $title = basename($parts[2], '.txt');  // имя файла без .txt расширения
+                $description = file_get_contents($entry);    // чтение из файла
+                echo "<tr>";
+                echo "<td>test@mail.ru</td>";
+                echo "<td>{$category}</td>";        // вывод данных в нужные места таблички
+                echo "<td>{$title}</td>";
+                echo "<td>{$description}</td>";
+                echo "</tr>";
+            }
+            ?>
             </tbody>
         </table>
     </div>
