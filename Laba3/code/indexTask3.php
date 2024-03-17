@@ -8,7 +8,7 @@
     <title>Название!</title>
 </head>
 <body>
-    <div>
+    <div id="form">
         <form action="save.php" method="post">
             <label for="email">Email</label>
             <input type="email" name="email" required>
@@ -27,6 +27,22 @@
 
             <input type="submit" value="Save">
         </form>
+    </div>
+    <div id="table">
+        <table>
+            <thead>
+            <th>Category</th>
+            <th>Title</th>
+            <th>Description</th>
+            </thead>
+            <tbody>
+            <tr>
+                    <td>cars</td>
+                    <td>test</td>
+                    <td>blablabla blaa</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
