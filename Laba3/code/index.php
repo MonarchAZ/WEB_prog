@@ -6,6 +6,9 @@
     <input type="submit" name="submit" value="Посчитать">
 </form>
 
+<?php
+
+?>
 
 </body>
 </html>
