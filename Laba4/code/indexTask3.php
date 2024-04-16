@@ -1,3 +1,16 @@
+<?php
+/*
+Общий ход:
+1) Установил интерпретатор php.exe
+2) Установил composer
+3) Скачал две библиотеки (google/apiclient и asimlqt/php-google-spreadsheet-client)
+4) Посмотрел два видео: https://www.youtube.com/watch?v=MfhvNHY55cQ и https://www.youtube.com/watch?v=zoufwxZjr0c)
+5) Опираясь на них вытащил из GoogleSheets нужный json-файл и настроил взаимодействие с гугл-таблицами
+P.S. json-файл (creditionals) из GoogleSheets не могу прикрепить т.к. ругается GitHub Desktop
+P.S.S. Это полная жесть...
+*/
+?>
+
 <!doctype html>
 <html lang = 'en'>
 <head>
@@ -38,6 +51,7 @@
             </thead>
             <tbody>
             <?php
+// Оставил из прошлой лабы
             $entries = glob('categories/*/*.txt');    // поиск файла из шаблонов .txt в папке categories
             foreach ($entries as $entry) {                   // перебираем каждый элемент массива
                 $parts = explode('/', $entry);      // разделяем строку пути файла на части через /
@@ -45,6 +59,22 @@
                 $title = basename($parts[2], '.txt');  // имя файла без .txt расширения
                 $description = file_get_contents($entry);    // чтение из файла
                 $data = explode("\n", $description);
+
+                require_once __DIR__ . '/vendor/autoload.php';     // подключение библиотеки
+
+                // Google API клиент
+                $client = new Google_Client();
+                $client->setAuthConfig('creditionals.json');
+                $client->addScope(Google_Service_Sheets::SPREADSHEETS_READONLY);    // уровень доступа
+                $service = new Google_Service_Sheets($client);  // сервис Google Sheets
+
+                $spreadsheetId = '1rYS-JgaPsT2lpmt8ytlzeTaGyOZ7z-nq8a2cTVUCZIQ';  // id моей таблицы
+                $range = "Test!A1:D1000";   // название листа с диапазаном ячеек
+
+                // Получаем значения из указанного диапазона
+                $response = $service->spreadsheets_values->get($spreadsheetId, $range);
+                $values = $response->getValues();    // получаем данные и сохраняем в переменную
+
                 echo "<tr>";
                 echo "<td>{$data[0]}</td>";
                 echo "<td>{$category}</td>";        // вывод данных в нужные места таблички
